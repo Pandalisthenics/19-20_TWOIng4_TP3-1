@@ -32,12 +32,41 @@
 .nav button{
   background-color: powderblue;
   margin-right: 20px;
-  border-color: midnightblue;
+  border-color: white;
 }
 
-.container{
+.carac{
+  padding-left: 10px;
+  padding-right: 10px;
 }
+.photo{
+  text-align: center;
+}
+.reaction{
+}
+
 
 .main{
-  text-align: center;
+}
+
+.profil {
+  box-sizing: content-box;
+  width: 50%;
+  border: solid #5B6DCD 5px;
+  margin-left: 25%;
+  height: 300px;
+  margin-top: 2%;
+}
+
+.publication {
+  box-sizing: content-box;
+  width: 50%;
+  border: solid #5B6DCD 5px;
+  margin-left: 25%;
+  height: 200px;
+  margin-top: 2%;
+}
+
+.contenu_publi{
+  padding-left: 10px;
 }
