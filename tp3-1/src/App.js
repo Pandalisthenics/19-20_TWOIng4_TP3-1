@@ -4,6 +4,10 @@ import Bouton from "./Bouton.js";
 import Profil from "./Profil.js";
 import Publication from "./Publication";
 
+import Ours1 from './ours1.jpg'
+import Ours2 from './ours2.jpg'
+import Ours3 from './ours3.jpg'
+
 class App extends React.Component {
   constructor(props){
     super(props);
@@ -11,7 +15,7 @@ class App extends React.Component {
     this.state = {
       profils : [
         {
-          photo: "imgJeanne",
+          photo: Ours1,
           prenom: "Jeanne",
           nom: "Morin",
           birthday: "12/01/2001",
@@ -19,7 +23,7 @@ class App extends React.Component {
           nbLikes: 121
         },
         {
-          photo: "imgMartine",
+          photo: Ours2,
           prenom: "Martine",
           nom: "Coanet",
           birthday: "01/03/1923",
@@ -27,7 +31,7 @@ class App extends React.Component {
           nbLikes: 1023
         },
         {
-          photo: "imgClaude",
+          photo: Ours3,
           prenom: "Claude",
           nom: "Bouvier",
           birthday: "27/08/1962",
