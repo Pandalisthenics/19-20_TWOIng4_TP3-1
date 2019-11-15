@@ -35,18 +35,17 @@
   border-color: white;
 }
 
-.carac{
-  padding-left: 10px;
-  padding-right: 10px;
-}
 .photo{
   text-align: center;
 }
 .reaction{
 }
 
-
 .main{
+}
+
+.card{
+  margin: auto;
 }
 
 .profil {

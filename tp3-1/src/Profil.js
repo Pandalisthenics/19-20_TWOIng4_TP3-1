@@ -1,6 +1,7 @@
 import React from "react";
 import Bouton from "./Bouton.js";
 import './App.css';
+import Ours from './ours.jpg'
 
 class Profil extends React.Component{
 
@@ -9,14 +10,13 @@ class Profil extends React.Component{
 
         this.state = {
             background: "antiquewhite"
-
         }
     }
 
     changecolor() {
         if(this.state.background == "antiquewhite") {
             this.setState({
-                background: "ghostwhite"
+                background: "cadetblue"
             })
         } else {
             this.setState({
@@ -27,16 +27,15 @@ class Profil extends React.Component{
 
     render(){
         return (
-            <div style={{backgroundColor: this.state.background}} className={"profil"}>
-                <div className={"carac"}>
-                <div className={"photo"}>Photo : {this.props.photo}</div><br></br>
-                Prenom : {this.props.prenom}
-                <div className={"nom"} style={{float : "right"}}>Nom : {this.props.nom}</div>
-                    <br></br><br></br><br></br><br></br>
-                <div className={"birthday"}>Birthday : {this.props.birthday}</div>
+
+                <div className="card" style={{width: 18 + 'rem' , backgroundColor: this.state.background}}>
+                    <img src={Ours} className="card-img-top" alt="not found"/>
+                        <div className="card-body">
+                            <h5 className="card-title">Prenom : {this.props.prenom}</h5>
+                            <p className="card-text">Nom : {this.props.nom}<br></br>Birthday : {this.props.birthday}</p>
+                            <button onClick={() => this.changecolor()}>Thème</button>
+                        </div>
                 </div>
-                <button onClick={() => this.changecolor()}>Thème</button>
-            </div>
         );
     }
 }
